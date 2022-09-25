@@ -85,7 +85,7 @@ app.post("/sendTelegram", async (req,res)=> {
 	const fullMessage = message + "\n\n" + link
 
 	console.log(fullMessage)
-	- var telegram = 'https://api.telegram.org/bot1917163260:AAGIjRqxoDz47Obt80_r-cUmyVmpvYelbZ0/sendMessage?chat_id=@PartyDoPetrolDo&text=' + message +"%0D%0A"+link;
+	
 	+ var telegram = `https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage?chat_id=@${process.env.TELEGRAM_CHANNEL}&text=` + message +"%0D%0A"+link;
 	options = {
 		headers:{
