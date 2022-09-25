@@ -6,7 +6,7 @@ const Bluebird = require('bluebird');
 fetch.Promise = Bluebird;
 const BitlyClient = require('bitly').BitlyClient;
 const bodyParser = require('body-parser')
-- const bitly = new BitlyClient(2adfabe3fdba84d28e50f402bc235c5e41ab0adc);
+
 + const bitly = new BitlyClient(process.env.BITLY_TOKEN);
  const LoginRoute = require('./login')
 
