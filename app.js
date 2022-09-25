@@ -18,8 +18,7 @@ app.use(bodyParser.urlencoded({extended:false}))
 
 +
 const port = process.env.PORT || 9000;
-- const amazontracking = "dev022-21"
-- const flipkarttracking = "dev22"
+
 + const amazontracking = process.env.AMAZON_TRACKING
 + const flipkarttracking = process.env.FLIPKART_TRACKING
 var output_data = {found:false}
